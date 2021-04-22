@@ -27,7 +27,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: wwinds/appContinousIntegration:latest
+          tags: wwinds/appci:latest
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
